@@ -1,0 +1,47 @@
+.mainQuienes {
+    margin: 20px;
+
+    .titulos {
+        @include estilo-titulos;
+    }
+
+    /* UBICACIONES DE PARRAFOS E IMAGENES */
+
+    .articulos {
+
+        .sector {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: 25px;
+
+            .articulo {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 10px;
+            }
+        
+        }
+    
+    }
+
+    .subtitulo {
+        @include estilo-subtitulos;
+    }
+
+    .parrafo {
+        @include estilo-parrafos;
+    }
+
+    .foto {
+        width: 700px;
+        margin: 15px;
+    }
+
+    .fotoPlotter {
+        display: flex;
+        justify-content: center;
+    }
+
+}

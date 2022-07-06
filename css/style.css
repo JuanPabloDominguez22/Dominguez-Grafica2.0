@@ -11,6 +11,7 @@
 /* GRIS NAV */
 /* MIXIN NAV */
 /* ESTILO DE TITULOS */
+/* INSERTS DE TEXTO */
 /* Partials de /pages */
 /* DONDE ESTAMOS */
 /* NAVBAR */
@@ -63,7 +64,6 @@
   place-items: center;
 }
 .mainDonde .titulo {
-  grid-area: titulo;
   color: #ffffff;
   font-family: "Play", sans-serif;
   font-size: 60px;
@@ -71,10 +71,9 @@
   margin-bottom: 25px;
 }
 .mainDonde .parrafo {
-  grid-area: parrafo;
   color: #ffffff;
   font-family: "Play", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -179,7 +178,6 @@
 }
 .mainGaleria .titulo {
   grid-area: titulo;
-  grid-area: titulo;
   color: #ffffff;
   font-family: "Play", sans-serif;
   font-size: 60px;
@@ -189,6 +187,99 @@
 .mainGaleria .carousel {
   grid-area: galeria;
   margin: 40px;
+}
+
+.titulo {
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.parrafo {
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin: 25px;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+}
+
+.logosRedes {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .datosPersonales {
+  display: flex;
+  margin: 15px;
+}
+.formulario .datos {
+  width: 500px;
+  height: 35px;
+  margin: 5px;
+  color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+}
+
+.mainQuienes {
+  margin: 20px;
+  /* UBICACIONES DE PARRAFOS E IMAGENES */
+}
+.mainQuienes .titulos {
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.mainQuienes .articulos .sector {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+}
+.mainQuienes .articulos .sector .articulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+.mainQuienes .subtitulo {
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.mainQuienes .parrafo {
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.mainQuienes .foto {
+  width: 700px;
+  margin: 15px;
+}
+.mainQuienes .fotoPlotter {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

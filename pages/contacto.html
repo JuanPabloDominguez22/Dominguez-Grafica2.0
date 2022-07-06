@@ -10,30 +10,66 @@
         </style>
     </head>
     <body background="../assets/background image.jpg">
-            <header class="headerUbicacion">
-                <div class="contenedorImgNav">
-                    <a href="../index.html" class="imangenNav"><img class="logoImprentaNav" src="../assets/logo png.png" alt="Logo Imprenta" title="Volver al inicio"></a>
+        <header class="headerUbicacion">
+            <div class="contenedorImgNav">
+                <a href="../index.html" class="imangenNav"><img class="logoImprentaNav" src="../assets/logo png.png" alt="Logo Imprenta" title="Volver al inicio"></a>
+            </div>
+            <nav class="navBar">
+                <div class="inicioNav">
+                    <a class="efectoHover" href="../index.html">Inicio</a>
                 </div>
-                <nav class="navBar">
-                    <div class="inicioNav">
-                        <a class="efectoHover" href="../index.html">Inicio</a>
-                    </div>
-                    <div class="quienesSomosNav">
-                        <a class="efectoHover" href="quienes_somos.html">Quienes somos?</a>
-                    </div>
-                    <div class="dondeEstamosNav">
-                        <a class="efectoHover" href="donde_estamos.html">Donde estamos?</a>
-                    </div>
-                    <div class="galeriaNav">
-                        <a class="efectoHover" href="galeria.html">Galeria</a>
-                    </div>
-                    <div class="contactoNav">
-                        <a class="efectoHover" href="contacto.html">Contacto</a>
-                    </div>
-                </nav>
-            </header>
-            <main class="mainContacto">
-                
-            </main>   
+                <div class="quienesSomosNav">
+                    <a class="efectoHover" href="quienes_somos.html">Quienes somos?</a>
+                </div>
+                <div class="dondeEstamosNav">
+                    <a class="efectoHover" href="donde_estamos.html">Donde estamos?</a>
+                </div>
+                <div class="galeriaNav">
+                    <a class="efectoHover" href="galeria.html">Galeria</a>
+                </div>
+                <div class="contactoNav">
+                    <a class="efectoHover" href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="encabezado">
+                <!--Detalle del contacto-->
+                <h1 class="titulo">Contactate con nosotros</h1>
+                <p class="parrafo">Ponerte en contacto con nosotros es fácil! Tenemos varios metodos de contacto, elegi el mas cómodo para vos! Hace click en el logo de Whatsapp para ir directo a nuestro chat, o agendanos al 2241-440772 y llamanos!</p>
+            </div>
+            <!--Logos de las redes-->
+            <div class="logosRedes">
+                <a href="https://whatsapp.com" target="_blank"> <img src="../assets/whatsapp-icone-2.png" alt="Logo Whatsapp" width="180px" title="Click para ir a nuestro Whatsapp"></a>
+                <a href="https://facebook.com/graficexpress.chascomus" target="_blank"> <img src="../assets/facebok-logo7.png" alt="Logo Facebook" width="200px"title="Click para ir a nuestro Facebook"></a>
+                <a href="https://instagram.com/graficexpressok/" target="_blank"> <img src="../assets/instagram-logo6.png" alt="Logo instagram" width="200px" target="_blank" title="Click para ir a nuestro Instagram"></a>
+            </div>
+            <div>
+                <p class="parrafo">También tenemos Facebook e Instagram, donde no solo podes contactarnos, sino que también podes ver nuestra galería, promociones y novedades!</p>
+                <br>
+                <p class="parrafo">Envianos tu consulta, indicando nombre, mail y teléfono y a la brevedad estaremos atendiendo tu pedido! Si sos diseñador y buscas servicio de impresión, no olvides aclarar “Soy Diseñador” para acceder a promociones y descuentos al gremio.</p>
+            </div>
+            <!--Formulario de contacto-->
+            <form class="formulario">
+                <div class="datosPersonales">
+                    <input class="datos" type="text" id="nombre" placeholder="Nombre y Apellido">
+                    <input class="datos" type="email" id="email" placeholder="Dirección de e-mail">
+                    <input class="datos" type="tel" id="telefono" placeholder="Teléfono de contacto">
+                </div>
+                <!--Boton de check-->
+                <label for="diseñador"> Soy un diseñador!</label>
+                <input type="checkbox" name="Botoncito" id="diseñador">
+                <br>
+                <label for="Adjuntar-archivo">Adjuntar Archivo</label>
+                <input type="button" value="Buscar">
+                <br>
+                <label for="mensaje"></label>
+                <textarea id="mensaje" cols="50" rows="10" placeholder="Escribinos tu consulta y nos pondremos en contacto a la brevedad"></textarea>
+                <br>
+                <!--Botones de submit y reset-->
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </main>   
     </body>
 </html>

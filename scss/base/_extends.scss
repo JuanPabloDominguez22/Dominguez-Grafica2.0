@@ -34,7 +34,6 @@ $gris-nav: rgba($color: #9b9b9b, $alpha: 0.6);
 /* ESTILO DE TITULOS */
 
 @mixin estilo-titulos {
-    grid-area: titulo;
     color: #ffffff;
     font-family: $fuente-nav;
     font-size: 60px;
@@ -42,11 +41,18 @@ $gris-nav: rgba($color: #9b9b9b, $alpha: 0.6);
     margin-bottom: 25px;
 }
 
-@mixin estilo-parrafos {
-    grid-area: parrafo;
+@mixin estilo-subtitulos {
     color: #ffffff;
     font-family: $fuente-nav;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@mixin estilo-parrafos {
+    color: #ffffff;
+    font-family: $fuente-nav;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
 }

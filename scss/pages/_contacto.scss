@@ -1,0 +1,37 @@
+
+.titulo {
+    @include estilo-titulos;
+}
+
+.parrafo {
+    @include estilo-parrafos;
+    margin: 25px;
+}
+.encabezado {
+    display: flex;
+    flex-direction: column;
+}
+
+.logosRedes {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    .datosPersonales {
+        display: flex;
+        margin: 15px;
+    }
+
+    .datos {
+        width: 500px;
+        height: 35px;
+        margin: 5px;
+        @include insert
+    }
+}
