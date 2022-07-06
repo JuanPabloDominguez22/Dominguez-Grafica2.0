@@ -1,0 +1,18 @@
+
+.mainGaleria {
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "galeria";
+
+    .titulo {
+        grid-area: titulo;
+        @include estilo-titulos;
+    }
+
+    .carousel {
+        grid-area: galeria;
+        margin: 40px;
+    }
+
+}

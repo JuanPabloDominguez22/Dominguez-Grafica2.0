@@ -1,0 +1,52 @@
+
+/* EFECTO HOVER */
+$efecto-hover: linear-gradient(90deg, orangered, orangered) no-repeat right bottom / 0 var(--bg-h);
+
+/* GRIS NAV */
+$gris-nav: rgba($color: #9b9b9b, $alpha: 0.6);
+
+/* MIXIN NAV */
+
+@mixin ubicacion-navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px;
+    background-color: $gris-nav;
+}
+
+@mixin tamaño-logo {
+    width: 500px;
+    margin: 15px;
+}
+
+@mixin ubicacion-logo {
+    justify-content: center;
+    align-content: center; 
+}
+
+@mixin estilo-navbar {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: $fuente-nav;
+    font-size: 20px;
+}
+
+/* ESTILO DE TITULOS */
+
+@mixin estilo-titulos {
+    grid-area: titulo;
+    color: #ffffff;
+    font-family: $fuente-nav;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@mixin estilo-parrafos {
+    grid-area: parrafo;
+    color: #ffffff;
+    font-family: $fuente-nav;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}

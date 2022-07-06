@@ -45,7 +45,7 @@
     a {
         text-decoration: none;
         color: #ffffff;
-        font-family: 'Play' , sans-serif;
+        font-family: $fuente-nav;
         font-size: 40px;
     }
 
@@ -54,12 +54,12 @@
 /* EFECTO HOVER */
 
 .efectoHover{
-     background: linear-gradient(90deg, orangered, orangered) no-repeat right bottom / 0 var(--bg-h);
+    background: $efecto-hover;
     transition: background-size 350ms;
     --bg-h: 100%;
 }
 
 .efectoHover:where(:hover, :focus-visible) {
-  background-size: 100% var(--bg-h);
-  background-position-x: left;
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
 }
