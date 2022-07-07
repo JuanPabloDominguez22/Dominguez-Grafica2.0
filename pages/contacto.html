@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO -->
+        <!-- PALABRAS CLAVE -->
+        <meta name="keywords" content="imprenta, grafica, plotter, ploteo, impresion, chascomus, vinilo, lona, bandera, carteles, polifan">
+        <!-- DESCRIPCION-->
+        <meta name="description" content="Imprenta y cartelería. Realizamos el servicio grafico completo">
         <title>Contacto - Grafic Express Comunicación Visual</title>
         <link rel="stylesheet" href="../css/style.css">
         <style> @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
@@ -57,18 +62,22 @@
                     <input class="datos" type="tel" id="telefono" placeholder="Teléfono de contacto">
                 </div>
                 <!--Boton de check-->
-                <label for="diseñador"> Soy un diseñador!</label>
-                <input type="checkbox" name="Botoncito" id="diseñador">
-                <br>
-                <label for="Adjuntar-archivo">Adjuntar Archivo</label>
-                <input type="button" value="Buscar">
-                <br>
-                <label for="mensaje"></label>
-                <textarea id="mensaje" cols="50" rows="10" placeholder="Escribinos tu consulta y nos pondremos en contacto a la brevedad"></textarea>
-                <br>
+                <div class="botonCheck">
+                    <p class="subtitulo">Soy un diseñador!</p>
+                    <input type="checkbox" name="Botoncito" class="botoncito">
+                </div>
+                <div class="adjuntar">
+                    <p class="parrafo">Adjuntar archivo</p>
+                    <input class="botonAdjuntar" type="button" value="Buscar">
+                </div>
+                <div class="contenedorMensaje">
+                    <textarea class="mensaje" cols="50" rows="10" placeholder="Escribinos tu consulta y nos pondremos en contacto a la brevedad"></textarea>
+                </div>
                 <!--Botones de submit y reset-->
-                <input type="submit">
-                <input type="reset">
+                <div class="botones">
+                    <input class="botonGrande" type="submit">
+                    <input class="botonGrande" type="reset">
+                </div>
             </form>
         </main>   
     </body>
