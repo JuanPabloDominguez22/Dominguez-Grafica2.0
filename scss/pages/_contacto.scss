@@ -1,6 +1,8 @@
+/* MOBILE */
 
 .titulo {
     @include estilo-titulos;
+    margin: 10px;
 }
 
 .parrafo {
@@ -19,20 +21,27 @@
 
 .logosRedes {
     display: flex;
-    justify-content: space-around;
-    margin: 25px;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-/* SECTOR FORMULARIO DE CONTACTO */
+    .logo {
+        width: 150px;
+    }
+}
 
 .formulario {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .datosPersonales {
         display: flex;
+        flex-direction: column;
         margin: 15px;
         justify-content: center;
+
     }
 
     .datos {
@@ -43,8 +52,6 @@
     }
 
 }
-
-/* BOTON CHECK */
 
 .botonCheck {
     display: flex;
@@ -89,5 +96,104 @@
 
     .botonGrande {
         @include botones-grandes;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+
+    .titulo {
+        @include estilo-titulos;
+    }
+
+    .parrafo {
+        @include estilo-parrafos;
+        margin: 25px;
+    }
+
+    .subtitulo {
+        @include estilo-subtitulos;
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logosRedes {
+        display: flex;
+        justify-content: space-around;
+        margin: 25px;
+    }
+
+    /* SECTOR FORMULARIO DE CONTACTO */
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+
+        .datosPersonales {
+            display: flex;
+            margin: 15px;
+            justify-content: center;
+        }
+
+        .datos {
+            width: 500px;
+            height: 35px;
+            margin: 5px;
+            @include insert;
+        }
+
+    }
+
+    /* BOTON CHECK */
+
+    .botonCheck {
+        display: flex;
+        justify-content: center;
+
+        .botoncito {
+            width: 25px;
+            margin: 10px;
+            margin-top: 5px;
+        }
+    }
+
+    .adjuntar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .botonAdjuntar {
+            @include botones-grandes;
+        }
+    }
+
+    .contenedorMensaje{
+        display: flex;
+        justify-content: center;
+
+        .mensaje {
+            width: 70%;
+            height: 300px;
+            margin-bottom: 25px;
+            font-size: 25px;
+            text-align: center;
+            padding: 15px;
+        }
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+        margin-bottom: 25px;
+
+        .botonGrande {
+            @include botones-grandes;
+        }
     }
 }

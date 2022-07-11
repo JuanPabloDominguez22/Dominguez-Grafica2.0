@@ -3,13 +3,13 @@
 /* Partials de /base */
 @import "base/reseteo";
 @import "base/fuentes";
-@import "base/extends";
+@import "base/mixins";
 @import "base/buttons";
+@import "base/header";
 
 /* Partials de /pages */
 @import "pages/donde_estamos";
 @import "pages/index";
-@import "pages/pre_index";
 @import "pages/galeria";
 @import "pages/contacto";
 @import "pages/quienes_somos";

@@ -1,4 +1,6 @@
 
+/* DESKTOP */
+
 /* EFECTO HOVER */
 $efecto-hover: linear-gradient(90deg, orangered, orangered) no-repeat right bottom / 0 var(--bg-h);
 
@@ -28,7 +30,7 @@ $gris-nav: rgba($color: #9b9b9b, $alpha: 0.6);
     text-decoration: none;
     color: #ffffff;
     font-family: $fuente-nav;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* ESTILO DE TITULOS */
@@ -55,4 +57,23 @@ $gris-nav: rgba($color: #9b9b9b, $alpha: 0.6);
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
+}
+
+
+/* MOBILE */
+
+@mixin estilo-nav-mobile {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: $fuente-nav;
+    font-size: 45px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+@mixin estilo-navbar-mobile {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: $fuente-nav;
+    font-size: 30px;
 }

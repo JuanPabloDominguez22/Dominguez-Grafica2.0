@@ -1,0 +1,119 @@
+
+/* MOBILE */
+
+.headerUbicacion {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "menu";
+    background-color: $gris-nav;
+
+    .contenedorImgNav {
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+
+        .logoImprentaNav {
+            width: 30rem;
+        }
+    }
+
+
+    .navBar {
+        grid-area: menu;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "inicio quienes"
+        "donde galeria"
+        "contacto contacto";
+        place-items: center;
+
+        .inicioNav {
+            grid-area: inicio;
+            margin: 15px;
+
+        }
+
+        .quienesSomosNav {
+            grid-area: quienes;
+            margin: 15px;
+        }
+
+        .dondeEstamosNav {
+            grid-area: donde;
+            margin: 15px;
+        }
+
+        .galeriaNav {
+            grid-area: galeria;
+            margin: 15px;
+        }
+
+        .contactoNav {
+            grid-area: contacto;
+            margin: 15px;
+        }
+
+        a {
+            @include estilo-navbar-mobile;
+        }
+    }
+}
+
+
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+        
+    /* NAVBAR */ 
+
+    .headerUbicacion {
+        @include ubicacion-navbar;
+
+        .contenedorImgNav {
+            display: flex;
+            
+            .logoImprentaNav {
+                @include tamaño-logo;
+            }
+
+        }
+
+        .navBar {
+            display: grid;
+            grid-template-areas: 
+            "inicio"
+            "quienes"
+            "donde"
+            "galeria"
+            "contacto";
+            place-items: center;
+
+            .inicioNav {
+                grid-area: inicio;
+            }
+
+            .quienesSomosNav {
+                grid-area: quienes;
+            }
+
+            .dondeEstamosNav {
+                grid-area: donde;
+            }
+
+            .galeriaNav {
+                grid-area: galeria;
+            }
+
+            .contactoNav {
+                grid-area: contacto;
+            }
+
+            a {
+                @include estilo-navbar;
+            }
+        }
+    }
+}

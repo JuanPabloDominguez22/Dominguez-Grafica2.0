@@ -1,53 +1,4 @@
-
-/* DONDE ESTAMOS */
-/* NAVBAR */ 
-
-.headerUbicacion {
-    @include ubicacion-navbar;
-
-    .contenedorImgNav {
-        @include ubicacion-logo;  
-
-        .logoImprentaNav {
-            @include tamaño-logo;
-        }
-    }
-
-    .navBar {
-        display: grid;
-        grid-template-areas: 
-        "inicio"
-        "quienes"
-        "donde"
-        "galeria"
-        "contacto";
-        place-items: center;
-
-        .inicioNav {
-            grid-area: inicio;
-            }
-
-        .quienesSomosNav {
-            grid-area: quienes;
-            }
-
-        .dondeEstamosNav {
-            grid-area: donde;
-            }
-
-        .galeriaNav {
-            grid-area: galeria;
-            }
-
-        .contactoNav {
-            grid-area: contacto;
-            }
-
-        a {
-            @include estilo-navbar;
-        }
-    }
-}
+/* MOBILE */
 
 /* MAIN DONDE ESTAMOS */
 
@@ -70,6 +21,41 @@
 
     .contenedorMapaGoogle {
         grid-area: mapa;
-        margin: 40px;
+        margin: 15px;
+
+        .mapaGoogle {
+            width: 500px;
+        }
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+
+    /* MAIN DONDE ESTAMOS */
+
+    .mainDonde {
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "parrafo"
+        "mapa";
+        margin: 15px;
+        place-items: center;
+
+        .titulo{
+            @include estilo-titulos;
+        }
+
+        .parrafo {
+            @include estilo-parrafos;
+        }
+
+        .contenedorMapaGoogle {
+            grid-area: mapa;
+            margin: 40px;
+        }
     }
 }

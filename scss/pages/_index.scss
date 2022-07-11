@@ -1,65 +1,90 @@
+
+/* MOBILE */
+
 .contenedorMainIndex {
-    display: grid;
-    grid-template-areas:
-    "logo quienes quienes"
-    "logo donde donde"
-    "logo galeria galeria"
-    "logo contacto contacto";
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .contenedorImg {
-        grid-area: logo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .logoImprenta { 
-            width: 500px;
-        }
+    .logoImprenta {
+        width: 25rem;
+        margin: 30px;
     }
 
     .quienesSomos {
-        grid-area: quienes;
+        @include estilo-nav-mobile;
     }
 
     .dondeEstamos {
-        grid-area: donde;
+        @include estilo-nav-mobile;
     }
 
     .galeria {
-        grid-area: galeria;
+        @include estilo-nav-mobile;
     }
 
     .contacto {
-        grid-area: contacto;
+        @include estilo-nav-mobile;
     }
 
-    .hijoMainIndex {
-        display: grid;
-        place-items: center;
-
-    }
-
-    a {
+    a{
         text-decoration: none;
         color: #ffffff;
-        font-family: $fuente-nav;
-        font-size: 40px;
     }
 
 }
 
-/* EFECTO HOVER */
 
-.efectoHover{
-    background: $efecto-hover;
-    transition: background-size 350ms;
-    --bg-h: 100%;
-}
+/* DESKTOP */
+@media screen and (min-width: 768px) {
 
-.efectoHover:where(:hover, :focus-visible) {
-    background-size: 100% var(--bg-h);
-    background-position-x: left;
+    .contenedorMainIndex {
+        display: grid;
+        grid-template-areas: 
+        "logo indice";
+        height: 100vh;
+        justify-content: space-around;
+
+        .contenedorImg{
+            grid-area: logo;
+            justify-content: space-around;
+
+            .logoImprenta{
+                width: 50rem;
+            }
+        }
+
+        .navBarIndex {
+            grid-area: indice;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 80vh;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: $fuente-nav;
+            font-size: 40px;
+        }
+
+    }
+
+    /* EFECTO HOVER */
+
+    .efectoHover{
+        background: $efecto-hover;
+        transition: background-size 350ms;
+        --bg-h: 100%;
+    }
+
+    .efectoHover:where(:hover, :focus-visible) {
+        background-size: 100% var(--bg-h);
+        background-position-x: left;
+    }
+
 }
